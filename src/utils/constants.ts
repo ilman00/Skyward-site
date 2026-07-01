@@ -43,16 +43,38 @@ export const NAVIGATION = {
   main: [
     { name: "Home", href: "/", key: "home" },
     { name: "About", href: "/about", key: "about" },
-    { name: "Services", href: "/services", key: "services" },
+    {
+      name: "Services",
+      href: "/services",
+      key: "services",
+      dropdown: [
+        {
+          name: "Outdoor Advertising",
+          href: "/outdoor-advertising",
+          key: "outdoor-advertising",
+        },
+        { name: "Construction", href: "/construction", key: "construction" },
+        { name: "Travel Agency", href: "/travel-agency", key: "travel-agency" },
+        {
+          name: "Digital Marketing",
+          href: "/digital-marketing",
+          key: "digital-marketing",
+        },
+        {
+          name: "Bareera Clothing",
+          href: "/bareera-clothing-brand",
+          key: "bareera-clothing-brand",
+        },
+        {
+          name: "Premium Perfume",
+          href: "/premium-perfume-brand",
+          key: "premium-perfume-brand",
+        },
+        { name: "Skyward Town", href: "/skyward-town", key: "skyward-town" },
+      ],
+    },
     { name: "Portfolio", href: "/portfolio", key: "portfolio" },
     { name: "Contact", href: "/contact-us", key: "contact" },
-    {
-      name: "Outdoor Advertising",
-      href: "/outdoor-advertising",
-      key: "outdoor-advertising",
-    },
-    { name: "Construction", href: "/construction", key: "construction" },
-    { name: "Travel Agency", href: "/travel-agency", key: "travel-agency" },
   ],
   footer: {
     services: [
@@ -142,6 +164,54 @@ export const SERVICES = [
       "Quality Assurance & Site Management",
     ],
     image: "/assets/services/construction.jpg",
+  },
+
+  {
+    id: "bareera-clothing",
+    name: "Bareera Clothing Brand",
+    icon: "GiClothes",
+    description:
+      "Skyward Vision's premium fashion house, where heritage craftsmanship meets contemporary trends — wardrobe staples and statement pieces for the modern individual.",
+    features: [
+      "Hand-Finished Tailoring",
+      "Sustainable Fabric Sourcing",
+      "Made-to-Measure Available",
+      "Limited Edition Collections",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?w=600&auto=format&fit=crop&q=60",
+  },
+
+  {
+    id: "premium-perfume",
+    name: "Premium Perfume Brand",
+    icon: "GiPerfumeBottle",
+    description:
+      "Our elite fragrance line crafts artisanal, long-lasting perfumes that capture sophistication in a bottle — developed by master perfumers with notes that evolve beautifully throughout the day.",
+    features: [
+      "Crafted by Master Perfumers",
+      "12+ Hour Long-Lasting Wear",
+      "Ethically Sourced Ingredients",
+      "Hand-Finished, Refillable Bottles",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&auto=format&fit=crop&q=60",
+  },
+
+  {
+    id: "skyward-town",
+    name: "Skyward Town",
+    icon: "MdHome",
+    description:
+      "Our flagship master-planned mega-community, redefining smart, secure urban living — a self-sustaining eco-haven integrating luxury residential plots, commercial hubs, medical centers, and recreational parks.",
+    features: [
+      "Smart & Secure Gated Community",
+      "Self-Sustaining Eco Infrastructure",
+      "Integrated Residential, Commercial & Medical Zones",
+      "Expansive Parks & Recreational Spaces",
+    ],
+    image:
+      "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=60",
   },
 ];
 
