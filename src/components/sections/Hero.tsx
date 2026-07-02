@@ -5,10 +5,11 @@ import { ChevronLeft, ChevronRight, Pause, Play } from "lucide-react";
 
 const Hero = () => {
   const images = [
-    "/assets/mockups/1.jpeg",
-    "/assets/mockups/2.jpeg",
-    "/assets/mockups/3.jpeg",
-    "/assets/mockups/4.jpeg",
+    "/assets/mockups/Brand-Development.jpeg",
+    "/assets/mockups/Construction.jpeg",
+    "/assets/mockups/Digital-Marketing.jpeg",
+    "/assets/mockups/outdoor-advertisement.jpeg",
+    "/assets/mockups/Real-Estatee.jpeg"
   ];
 
   const [current, setCurrent] = useState(0);
