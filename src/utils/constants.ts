@@ -21,7 +21,7 @@ export const CONTACT_INFO = {
     state: "Peshawar",
     country: "Pakistan",
     zipCode: "25000",
-    full: "Ofc # 6, 4th Floor, Peshawar Mall Near Hayatabad Toll Plaza Ring Road Peshawar",
+    full: "Office E21 3rd floor GS Tower, Hayatabad Toll Plaza Ring, XFF4+9PJ, Road, Achini Meira Peshawar",
   },
   hours: {
     weekdays: "Monday - Friday: 09:00 AM - 05:00 PM",

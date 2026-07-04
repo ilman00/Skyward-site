@@ -39,13 +39,16 @@ const teamMembers: TeamMember[] = [
     social: { whatsapp: "https://wa.me/923475861902" },
   },
   {
-    image: "/assets/team-member/marketingdirector.jpeg",
-    name: "Amjid Ali",
-    position: "Marketing Director",
-    about:
-      "Driving brand visibility, leading marketing strategies, and building strong client relationships to expand Skyward Vision’s presence in the construction sector.",
-    social: {},
-  },
+      name: "Syed Mohammed Yaseen",
+      position: "General Manager",
+      image: "/assets/team-member/generalmanager.jpeg",
+      about:
+        "Strategic operations leader focused on driving business growth, team performance, and exceptional client service.",
+        social: {
+          whatsapp: "https://wa.me/923149107550",
+        },
+    },
+  
 ];
 
 export default function OurTeam() {

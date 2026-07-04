@@ -9,7 +9,9 @@ const Hero = () => {
     "/assets/mockups/Construction.jpeg",
     "/assets/mockups/Digital-Marketing.jpeg",
     "/assets/mockups/outdoor-advertisement.jpeg",
-    "/assets/mockups/Real-Estatee.jpeg"
+    "/assets/mockups/Real-Estatee.jpeg",
+    "/assets/mockups/BareeraChlothing.jpeg",
+    "/assets/mockups/Perfume.jpeg",
   ];
 
   const [current, setCurrent] = useState(0);

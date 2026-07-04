@@ -3,11 +3,11 @@ import React from "react";
 
 const EventsSection: React.FC = () => {
   const photos = [
-    "https://images.unsplash.com/photo-1509223197845-458d87318791?w=1200&q=80&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?w=1200&q=80&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=1200&q=80&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?w=1200&q=80&auto=format&fit=crop",
+    "/assets/Events/GovernorHouseEvent4.jpeg",
+    "/assets/Events/PeshBarracks2.jpeg",
+    "/assets/Events/PeshBarracks10.jpeg",
+    "/assets/Events/GovernorHouseEvent2.jpeg",
+    "/assets/Events/PeshBarracks8.jpeg",
   ];
 
   return (

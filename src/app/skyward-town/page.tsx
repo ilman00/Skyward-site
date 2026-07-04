@@ -14,6 +14,7 @@ import {
   Leaf,
   MapPin,
 } from "lucide-react";
+import Image from "next/image";
 
 // ─── Data ────────────────────────────────────────────────────────────────────
 
@@ -87,7 +88,17 @@ export default function SkywardTownPage() {
     <main id="main-content">
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative py-24 lg:py-36 bg-gradient-to-r from-sky-400 to-blue-600 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-black/20" />
+
+
+        <Image
+          src="/assets/mockups/SkywardTown1Copy.jpeg"
+          alt="Skyward Town aerial view"
+          fill
+          priority
+          className="object-cover"
+        />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/60 to-black/40" />
         <div className="absolute top-12 left-10 w-24 h-24 bg-white/10 rounded-full blur-2xl animate-pulse" />
         <div className="absolute bottom-20 right-12 w-32 h-32 bg-yellow-400/20 rounded-full blur-3xl animate-pulse delay-1000" />
         <div className="absolute top-1/2 -left-20 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
@@ -137,7 +148,7 @@ export default function SkywardTownPage() {
         </div>
       </section>
 
-      {/* ── Overview ─────────────────────────────────────────────────────── */}
+      {/* ── Overview ───────── ────────────────────────────────────────────── */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-white via-sky-50 to-blue-50 relative overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 bg-sky-400/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 right-20 w-40 h-40 bg-blue-600/20 rounded-full blur-3xl animate-pulse delay-700" />
@@ -180,7 +191,7 @@ export default function SkywardTownPage() {
             {/* Image */}
             <div className="relative group">
               <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80"
+                src="/assets/mockups/SkywardTown1Copy.jpeg"
                 alt="Skyward Town master-planned community"
                 className="w-full h-80 lg:h-96 object-cover rounded-2xl shadow-2xl transition-transform duration-700 group-hover:scale-105"
               />
