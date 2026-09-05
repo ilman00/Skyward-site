@@ -71,9 +71,11 @@ export const NAVIGATION = {
           key: "premium-perfume-brand",
         },
         { name: "Skyward Town", href: "/skyward-town", key: "skyward-town" },
+        { key: "architectural-design", name: "Architecture & Design", href: "/architectural-design" },
       ],
     },
     { name: "Portfolio", href: "/portfolio", key: "portfolio" },
+    { key: "team", name: "Our Team", href: "/team" },
     { name: "Contact", href: "/contact-us", key: "contact" },
   ],
   footer: {
@@ -213,6 +215,25 @@ export const SERVICES = [
     image:
       "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&auto=format&fit=crop&q=60",
   },
+  {
+  id: "architectural-design",
+  name: "Architectural & Design",
+  icon: "MdArchitecture",
+  description:
+    "End-to-end architecture and interior design — from site analysis and approval drawings to finished interiors and handed-over buildings, delivered by one accountable team.",
+  features: [
+    "Conceptual & Schematic Design",
+    "Architectural Drafting & Permits",
+    "Facade & Elevation Design",
+    "Space Planning & Layouts",
+    "Detailed Interior Design",
+    "Material & FF&E Selection",
+    "Design-Build Integration",
+    "3D Visualization & VR Walkthroughs",
+    "Landscape Architecture",
+  ],
+  image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+},
 ];
 
 // Testimonials data
@@ -355,6 +376,13 @@ export const SEO_META = {
     keywords:
       "construction digital signage, construction LED displays, site information screens, project display boards, safety message screens",
   },
+  architecturalDesign: {
+  title: "Architectural & Design Services | SkywardVision",
+  description:
+    "End-to-end architecture and interior design in Pakistan — concept design, drafting and permits, facade treatments, space planning, 3D visualization, VR walkthroughs, and landscape architecture.",
+  keywords:
+    "architectural services Pakistan, interior design Peshawar, 3D visualization, VR walkthrough, facade design, landscape architecture, design build",
+},
 };
 
 export default {

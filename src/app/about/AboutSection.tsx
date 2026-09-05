@@ -26,7 +26,7 @@ const AboutSection = () => {
     {
       name: "Muhammad Asad",
       role: "Director",
-      image: "/assets/team-member/director.jpeg",
+      image: "/assets/team-member/Man.png",
       description:
         "Award-winning creative professional specializing in brand identity and campaigns.",
     },

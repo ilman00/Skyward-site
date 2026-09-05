@@ -31,7 +31,7 @@ const teamMembers: TeamMember[] = [
     },
   },
   {
-    image: "/assets/team-member/director.jpeg",
+    image: "/assets/team-member/Man.png",
     name: "Muhammad Asad",
     position: "Director",
     about:

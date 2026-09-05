@@ -18,7 +18,8 @@ import {
   Users,
   Target,
 } from "lucide-react";
-import { SERVICES, SEO_META } from "@/utils/constants";
+import { SERVICES } from "@/utils/constants";
+
 import { generateServiceSchema } from "@/utils/seo";
 
 const ServicesSection = () => {
@@ -105,6 +106,15 @@ const ServicesSection = () => {
         "Performance monitoring",
       ],
       pricing: "Starting from PKR 75,000 per fleet",
+    },
+    "architectural-design": {
+      benefits: [
+        "One team from concept to handover",
+        "Approval-ready authority drawings",
+        "See it in VR before you build it",
+        "No gap between design and site execution",
+      ],
+      pricing: "Custom pricing based on project scope",
     },
   };
 
@@ -331,15 +341,13 @@ const ServicesSection = () => {
                     className="scroll-mt-24"
                   >
                     <div
-                      className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
-                        !isEven ? "lg:flex-row-reverse" : ""
-                      }`}
+                      className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${!isEven ? "lg:flex-row-reverse" : ""
+                        }`}
                     >
                       {/* Service Content */}
                       <div
-                        className={`space-y-6 transform transition-all duration-700 ease-out hover:scale-[1.02] ${
-                          !isEven ? "lg:order-2" : ""
-                        }`}
+                        className={`space-y-6 transform transition-all duration-700 ease-out hover:scale-[1.02] ${!isEven ? "lg:order-2" : ""
+                          }`}
                       >
                         <div className="flex items-center space-x-4">
                           <div className="w-16 h-16 bg-gradient-to-r from-sky-400 to-blue-600 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 animate-bounce-slow">
