@@ -71,11 +71,11 @@ const Header = () => {
         )}
       >
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 h-16 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-[auto_1fr_auto] h-16 items-center">
             <Logo />
 
             {/* Desktop Nav — centered */}
-            <nav className="hidden md:flex items-center justify-center space-x-8 col-start-2">
+            <nav className="hidden md:flex items-center justify-center space-x-6 lg:space-x-8 col-start-2">
               {NAVIGATION.main.map((item) =>
                 item.dropdown ? (
                   <div
@@ -87,7 +87,7 @@ const Header = () => {
                     <Link
                       href={item.href}
                       className={cn(
-                        "flex items-center gap-1 text-sm font-medium transition-colors relative after:block after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-sky-400 after:to-blue-600 after:transition-all after:duration-300 hover:after:w-full text-gray-800 hover:text-blue-600",
+                        "inline-flex items-center gap-1 whitespace-nowrap text-sm font-medium transition-colors relative pb-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-gradient-to-r after:from-sky-400 after:to-blue-600 after:transition-all after:duration-300 hover:after:w-full text-gray-800 hover:text-blue-600",
                         isActiveDropdown(item)
                           ? "text-blue-600 after:w-full font-semibold"
                           : ""
@@ -96,7 +96,7 @@ const Header = () => {
                       {item.name}
                       <HiChevronDown
                         className={cn(
-                          "w-4 h-4 transition-transform duration-200",
+                          "w-4 h-4 shrink-0 transition-transform duration-200",
                           isServicesOpen ? "rotate-180" : ""
                         )}
                       />
@@ -138,8 +138,8 @@ const Header = () => {
                       isActiveLink(item.href)
                         ? "text-blue-600 after:w-full font-semibold"
                         : isScrolled
-                        ? ""
-                        : "text-gray-800 hover:text-blue-600"
+                          ? ""
+                          : "text-gray-800 hover:text-blue-600"
                     )}
                   >
                     {item.name}
