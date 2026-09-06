@@ -75,7 +75,7 @@ export const NAVIGATION = {
       ],
     },
     { name: "Portfolio", href: "/portfolio", key: "portfolio" },
-    { key: "team", name: "Our Team", href: "/team" },
+    { key: "our-team", name: "Our Team", href: "/our-team" },
     { name: "Contact", href: "/contact-us", key: "contact" },
   ],
   footer: {

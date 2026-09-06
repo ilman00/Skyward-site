@@ -15,7 +15,7 @@ const EmployeeCard = ({ employee, index }: EmployeeCardProps) => {
 
   return (
     <Link
-      href={`/team/${employee.slug}`}
+      href={`/our-team/${employee.slug}`}
       className="group animate-fadeSlide block overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl"
       style={{ animationDelay: `${Math.min(index, 8) * 70}ms` }}
     >
