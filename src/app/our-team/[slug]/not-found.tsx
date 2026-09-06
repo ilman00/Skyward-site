@@ -13,7 +13,7 @@ export default function TeamProfileNotFound() {
         moved on, or the link may be out of date.
       </p>
       <Link
-        href="/team"
+        href="/our-team"
         className="mt-8 inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-sky-400 to-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:from-sky-500 hover:to-blue-700"
       >
         <HiArrowLeft className="h-4 w-4" aria-hidden="true" />
