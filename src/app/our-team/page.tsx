@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import EmployeeCard from "@/components/team/EmployeeCard";
 import { getEmployees } from "@/lib/employees";
 
-export const revalidate = 300;
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Our Team | SkywardVision",

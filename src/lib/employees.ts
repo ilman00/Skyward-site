@@ -1,7 +1,6 @@
 // src/lib/employees.ts
 import "server-only";
 import type { Employee, EmployeeSummary } from "@/types/employee";
-import { json } from "stream/consumers";
 
 const API_BASE = process.env.API_BASE_URL;
 
@@ -22,7 +21,7 @@ function unwrap<T>(json: unknown): T | null {
 
 export async function getEmployees(): Promise<EmployeeSummary[]> {
     const res = await fetch(`${API_BASE}/api/employees`, {
-        next: { revalidate: 300 },
+        cache: "no-store",
     });
 
     if (!res.ok) {
@@ -32,7 +31,7 @@ export async function getEmployees(): Promise<EmployeeSummary[]> {
     const list = unwrap<EmployeeSummary[]>(await res.json());
     if (!Array.isArray(list)) return [];
 
-    
+
     // console.log("[employees] raw:", list);
     // console.log("[employees] unwrapped count:", Array.isArray(list) ? list.length : "NOT AN ARRAY");
 
