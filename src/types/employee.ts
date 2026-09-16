@@ -11,9 +11,13 @@ export interface EmployeeSummary {
 }
 
 /** Shape returned by GET /api/employees/slug/:slug (full public profile) */
+/** Shape returned by GET /api/employees/slug/:slug (full public profile) */
 export interface Employee extends EmployeeSummary {
   /** Tiptap HTML, already sanitized server-side with sanitize-html */
   content: string | null;
+  general_information: string | null;
+  employment_details: string | null;
+  key_responsibilities: string | null;
   created_at: string;
   updated_at: string;
 }
